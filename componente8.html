@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title> <!--Titulo de la pagina-->
+</head>
+<body>
+    <!--Titulo-->
+    <h1>Registro para vacunacion COVID-19</h1>
+    <!--Metodo GET-->
+    <form action="formularios.html" method="POST">
+        <!--Colocando Labels para Nombre ,Apellido , Password , Email y Sexo-->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre" >
+    <br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" value="" placeholder="Ingrese su apellido" >
+    <br><br>
+    <label for="sexo">Sexo:</label>
+    <input type="radio" name="sexo" id="Hombre" value="Hombre">Hombre
+    <input type="radio" name="sexo" id="Mujer" value="Mujer">Mujer
+    <br><br>
+    <label for="correo">Correo:</label>
+    <input type="text" id="correo" name="correo" value="" placeholder="Ingrese su correo" >
+    <br><br>
+    <label for="Contraseña">Contraseña:</label>
+    <input type="password" id="Contraseña"  name="Contraseña" placeholder="Contraseña" maxlength="8">
+    <br><br>
+    <!--Agrego la licencia-->
+    <input type="checkbox">Declaro haber leido y acepto las condiciones generales del programa y la normativa sobre proteccion de datos
+    <br><br>
+    <!--Agrego El boton enviar de forma submit para que se envie la informacion-->
+    <button type="submit">Enviar</button>
+
+
+</form>
+
+</body>
+</html>
